@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios</title>
+</head>
+
+<body>
+    <script>
+        var valor1 = Number(prompt('digite um valor aleatorio:?'));  
+        var valor2 = Number(prompt('digite outro valor'));
+        var opera = prompt("Digite qual operação deseja realizar <strong> 1 divisão, 2 multiplica, 3 subtração</strong>")
+        function monstra(frase) {
+            document.write(frase);
+        }
+      if (opera == '1'){
+          soma = (valor1/valor2)
+          monstra(`a soma é  divisão é ${soma}`)
+          if(soma == 0 || soma == 2 || soma == 4 || soma == 6){
+              monstra(" o valor é <strong> PAR </strong>")
+          }
+          if (soma == 1 || soma ==3 || soma == 5 || soma == 7){
+              monstra('o valor é <strong>IMPAR</strong>')
+          }
+      }
+      if(opera == '2'){
+          soma = (valor1*valor2)
+          monstra(`a soma é multiplicação  ${soma}`)
+
+      }if (opera== '3'){
+          soma = (valor1+valor2)
+          monstra(`a soma é subtração ${soma}`)
+      }
+      if( opera != '1' && opera !='2' && opera !='3'){
+          monstra('valor invalido')
+      }
+
+      
+
+       
+
+    </script>
+
+</body>
+
+</html>
